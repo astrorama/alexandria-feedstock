@@ -47,7 +47,7 @@ install:
 script: |
     if [ "$TRAVIS_BRANCH" = "master" ]; then
         LABELS="main"
-    elif [ "$TRAVIS_PULL_REQUEST_BRANCH" = ""]; then
+    elif [ -z "$TRAVIS_PULL_REQUEST_BRANCH" ]; then
         LABELS="$TRAVIS_BRANCH"
     else
         LABELS="pr/$TRAVIS_PULL_REQUEST_BRANCH/$TRAVIS_BRANCH"
