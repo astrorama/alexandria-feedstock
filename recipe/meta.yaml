@@ -7,7 +7,7 @@ source:
     git_url: https://github.com/astrorama/Alexandria.git
 
 build:
-  number: 1
+  number: 2
 
 requirements:
     build:
@@ -18,14 +18,14 @@ requirements:
         - elements ==5.8
         - boost-cpp
         - cfitsio
-        - "CCfits[channel=astrorama]"
+        - CCfits
         - python
         - pytest
     run:
         - elements ==5.6
         - boost-cpp
         - cfitsio
-        - "CCfits[channel=astrorama]"
+        - CCfits
 
 about:
     home: https://github.com/astrorama/Alexandria.git
