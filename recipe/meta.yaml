@@ -22,7 +22,7 @@ requirements:
         - python
         - pytest
     run:
-        - elements ==5.6
+        - elements ==5.8
         - boost-cpp
         - cfitsio
         - CCfits
