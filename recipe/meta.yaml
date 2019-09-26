@@ -1,13 +1,13 @@
 package:
     name: alexandria 
-    version: "2.10_p3"
+    version: "2.14_p1"
 
 source:
-    git_rev: 2.10_p3
+    git_rev: 2.14_p1
     git_url: https://github.com/astrorama/Alexandria.git
 
 build:
-  number: 2
+  number: 1
 
 requirements:
     build:
