@@ -7,7 +7,7 @@ source:
     git_url: https://github.com/astrorama/Alexandria.git
 
 build:
-  number: 1
+  number: 2
 
 requirements:
     build:
@@ -16,14 +16,14 @@ requirements:
         - {{ compiler('cxx') }}
     host:
         - elements ==5.8
-        - boost-cpp
+        - boost-cpp ==1.70
         - cfitsio
         - CCfits
         - python
         - pytest
     run:
         - elements ==5.8
-        - boost-cpp
+        - boost-cpp ==1.70
         - cfitsio
         - CCfits
 
