@@ -7,7 +7,7 @@ source:
     git_url: https://github.com/astrorama/Alexandria.git
 
 build:
-  number: 2
+  number: {{ environ.get('GIT_DESCRIBE_NUMBER', 0) }}
 
 requirements:
     build:
