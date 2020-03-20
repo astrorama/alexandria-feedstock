@@ -8,6 +8,8 @@ source:
 
 build:
   number: {{ environ.get('GIT_DESCRIBE_NUMBER', 0) }}
+  run_exports:
+    - {{ pin_subpackage('alexandria', max_pin='x.x.x') }}
 
 requirements:
     build:
@@ -22,10 +24,8 @@ requirements:
         - python
         - pytest
     run:
-        - elements ==5.8
         - boost-cpp ==1.70
-        - cfitsio
-        - CCfits
+        - {{ pin_compatible('CCfits') }}
 
 about:
     home: https://github.com/astrorama/Alexandria.git
