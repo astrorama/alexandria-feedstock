@@ -17,7 +17,7 @@ requirements:
         - make
         - {{ compiler('cxx') }}
     host:
-        - elements ==5.8
+        - elements ==5.10
         - boost-cpp ==1.70
         - cfitsio
         - CCfits
