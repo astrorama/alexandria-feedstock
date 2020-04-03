@@ -1,13 +1,13 @@
 package:
     name: alexandria 
-    version: "2.14.1"
+    version: "2.15"
 
 source:
-    git_rev: 2.14.1
+    git_rev: "2.15"
     git_url: https://github.com/astrorama/Alexandria.git
 
 build:
-  number: 4
+  number: 1
   run_exports:
     - {{ pin_subpackage('alexandria', max_pin='x.x.x') }}
 
@@ -17,7 +17,7 @@ requirements:
         - make
         - {{ compiler('cxx') }}
     host:
-        - elements ==5.8
+        - elements ==5.10
         - boost-cpp ==1.70
         - cfitsio
         - CCfits

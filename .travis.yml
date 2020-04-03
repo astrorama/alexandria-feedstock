@@ -1,5 +1,7 @@
 language: generic
 
+if: branch != master OR tag IS present
+
 matrix:
     include:
         - os: linux
@@ -48,12 +50,12 @@ install:
         fi
 
 script: |
-    if [ "$TRAVIS_BRANCH" = "master" ]; then
+    if [ -n "$TRAVIS_TAG" ]; then
         LABELS="main"
     elif [ -z "$TRAVIS_PULL_REQUEST_BRANCH" ]; then
         LABELS="$TRAVIS_BRANCH"
     else
         LABELS="pr/$TRAVIS_PULL_REQUEST_BRANCH/$TRAVIS_BRANCH"
     fi 
-    conda build --user astrorama ./recipe --token "$ANACONDA_TOKEN" --label "$LABELS"
+    conda build --no-force-upload --user astrorama ./recipe --token "$ANACONDA_TOKEN" --label "$LABELS"
 
