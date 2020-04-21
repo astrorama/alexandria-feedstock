@@ -1,6 +1,6 @@
 package:
     name: alexandria 
-    version: "2.15"
+    version: "2.16"
 
 source:
     git_rev: develop
