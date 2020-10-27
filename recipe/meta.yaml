@@ -1,15 +1,19 @@
+{% set name = "Alexandria" %}
+{% set version = "2.18" %}
+{% set build_number = "c" + environ.get('GIT_DESCRIBE_NUMBER', '0') %}
+
 package:
-    name: alexandria 
-    version: "2.18"
+    name: {{ name|lower }}
+    version: {{ version }} 
 
 source:
     git_rev: develop
     git_url: https://github.com/astrorama/Alexandria.git
 
 build:
-  number: {{ environ.get('GIT_DESCRIBE_NUMBER', 0) }}
-  run_exports:
-    - {{ pin_subpackage('alexandria', max_pin='x.x.x') }}
+    number: {{ build_number }}
+    run_exports:
+      - {{ pin_subpackage('alexandria', max_pin='x.x.x') }}
 
 requirements:
     build:
@@ -17,15 +21,20 @@ requirements:
         - make
         - {{ compiler('cxx') }}
     host:
-        - elements ==5.10
-        - boost-cpp ==1.70
-        - cfitsio
-        - CCfits
         - python
-        - pytest
+        - boost-cpp
+        - elements ==5.10
+        - cfitsio >=3.470
+        - CCfits >=2.5
     run:
-        - boost-cpp ==1.70
+        - {{ pin_compatible('python', min_pin='x.x', max_pin='x.x') }}
+        - {{ pin_compatible('boost-cpp', min_pin='x.x', max_pin='x.x') }}
+        - {{ pin_compatible('cfitsio') }}
         - {{ pin_compatible('CCfits') }}
+
+test:
+    commands:
+        - $PREFIX/bin/AlexandriaVersion
 
 about:
     home: https://github.com/astrorama/Alexandria.git
