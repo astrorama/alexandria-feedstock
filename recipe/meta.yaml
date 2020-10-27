@@ -1,6 +1,6 @@
 {% set name = "Alexandria" %}
 {% set version = "2.18" %}
-{% set build_number = "c" + environ.get('GIT_DESCRIBE_NUMBER', '0') %}
+{% set build_number = environ.get('GIT_DESCRIBE_NUMBER', '0') %}
 
 package:
     name: {{ name|lower }}
@@ -11,7 +11,7 @@ source:
     git_url: https://github.com/astrorama/Alexandria.git
 
 build:
-    number: {{ build_number }}
+    number: c{{ build_number }}
     run_exports:
       - {{ pin_subpackage('alexandria', max_pin='x.x.x') }}
 
