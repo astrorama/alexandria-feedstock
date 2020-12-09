@@ -3,12 +3,5 @@
 # -*- mode: yaml -*-
 
 jobs:
+  - template: ./.azure-pipelines/azure-pipelines-linux.yml
   - template: ./.azure-pipelines/azure-pipelines-osx.yml
-
-schedules:
-  - cron: "0 12 * * 0"
-    displayName: Weekly Sunday build
-    branches:
-      include:
-      - develop
-    always: true
