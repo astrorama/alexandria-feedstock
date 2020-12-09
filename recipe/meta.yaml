@@ -23,7 +23,7 @@ requirements:
     host:
         - python
         - boost-cpp
-        - elements ==5.10
+        - elements ==5.12
         - cfitsio >=3.470
         - CCfits >=2.5
     run:
