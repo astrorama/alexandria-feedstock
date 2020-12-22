@@ -7,7 +7,7 @@ package:
     version: {{ version }} 
 
 source:
-    git_rev: develop
+    git_rev: develop 
     git_url: https://github.com/astrorama/Alexandria.git
 
 build:
@@ -20,6 +20,9 @@ requirements:
         - cmake >=3.0
         - make
         - {{ compiler('cxx') }}
+        - {{ compiler('c') }}
+        - python                             # [build_platform != target_platform]
+        - cross-python_{{ target_platform }} # [build_platform != target_platform]
     host:
         - python
         - boost-cpp
