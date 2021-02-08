@@ -9,7 +9,11 @@ c_compiler_version:
 channel_sources:
 - astrorama,conda-forge,defaults
 channel_targets:
+<<<<<<< HEAD
 - astrorama main
+=======
+- astrorama develop
+>>>>>>> develop
 cxx_compiler:
 - clangxx
 cxx_compiler_version:
