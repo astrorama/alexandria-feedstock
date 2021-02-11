@@ -32,8 +32,8 @@ requirements:
     run:
         - {{ pin_compatible('python', min_pin='x.x', max_pin='x.x') }}
         - {{ pin_compatible('boost-cpp', min_pin='x.x', max_pin='x.x') }}
-        - {{ pin_compatible('cfitsio') }}
-        - {{ pin_compatible('CCfits') }}
+        - {{ pin_compatible('cfitsio', min_pin='x.x', max_pin='x.x') }}
+        - {{ pin_compatible('CCfits', min_pin='x.x', max_pin='x.x') }}
 
 test:
     commands:
