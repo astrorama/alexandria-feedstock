@@ -1,5 +1,5 @@
 {% set name = "Alexandria" %}
-{% set version = "2.19" %}
+{% set version = "2.20" %}
 {% set build_number = environ.get('GIT_DESCRIBE_NUMBER', '0') %}
 
 package:
@@ -7,7 +7,7 @@ package:
     version: {{ version }} 
 
 source:
-    git_rev: develop 
+    git_rev: develop
     git_url: https://github.com/astrorama/Alexandria.git
 
 build:
