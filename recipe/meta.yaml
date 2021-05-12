@@ -1,38 +1,47 @@
+{% set name = "Alexandria" %}
+{% set version = "2.17.1" %}
+{% set build_number = 5 %}
+
 package:
-    name: alexandria 
-    version: "2.17.1"
+    name: {{ name|lower }}
+    version: {{ version }}
 
 source:
-    git_rev: "2.17.1"
+    git_rev: {{ version }}
     git_url: https://github.com/astrorama/Alexandria.git
     patches:
       - AlexandriaVersion.patch
+      - Elements5.12.patch
+      - boost-quoted.patch
 
 build:
-    number: 4
+    number: {{ build_number }}
     run_exports:
       - {{ pin_subpackage('alexandria', max_pin='x.x.x') }}
-
-test:
-    commands:
-        - $PREFIX/bin/AlexandriaVersion
 
 requirements:
     build:
         - cmake >=3.0
         - make
         - {{ compiler('cxx') }}
+        - {{ compiler('c') }}
+        - python                             # [build_platform != target_platform]
+        - cross-python_{{ target_platform }} # [build_platform != target_platform]
     host:
-        - python ==3.8
-        - boost-cpp ==1.73
-        - elements ==5.10
+        - python
+        - boost-cpp
+        - elements ==5.12
         - cfitsio >=3.470
         - CCfits >=2.5
     run:
         - {{ pin_compatible('python', min_pin='x.x', max_pin='x.x') }}
         - {{ pin_compatible('boost-cpp', min_pin='x.x', max_pin='x.x') }}
-        - {{ pin_compatible('cfitsio') }}
-        - {{ pin_compatible('CCfits') }}
+        - {{ pin_compatible('cfitsio', min_pin='x.x', max_pin='x.x') }}
+        - {{ pin_compatible('CCfits', min_pin='x.x', max_pin='x.x') }}
+
+test:
+    commands:
+        - $PREFIX/bin/AlexandriaVersion
 
 about:
     home: https://github.com/astrorama/Alexandria.git
