@@ -1,5 +1,5 @@
 {% set name = "Alexandria" %}
-{% set version = "2.20" %}
+{% set version = "2.21.0" %}
 {% set build_number = 1 %}
 
 package:
@@ -27,7 +27,7 @@ requirements:
     host:
         - python
         - boost-cpp
-        - elements ==5.12
+        - elements ==5.12.0
         - cfitsio >=3.470
         - CCfits >=2.5
     run:
