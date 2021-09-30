@@ -9,8 +9,6 @@ package:
 source:
     git_rev: develop
     git_url: https://github.com/astrorama/Alexandria.git
-    patches:
-        - macos_path.patch          # [osx]
 
 build:
     number: {{ build_number }}
