@@ -1,4 +1,4 @@
-boost_cpp:
+boost:
 - 1.74.0
 c_compiler:
 - gcc
@@ -17,7 +17,7 @@ cxx_compiler_version:
 docker_image:
 - quay.io/condaforge/linux-anvil-comp7
 pin_run_as_build:
-  boost-cpp:
+  boost:
     max_pin: x.x.x
   python:
     min_pin: x.x
