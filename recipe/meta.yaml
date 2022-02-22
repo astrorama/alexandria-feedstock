@@ -1,6 +1,6 @@
 {% set name = "Alexandria" %}
 {% set version = "2.24.0" %}
-{% set build_number = 2 %}
+{% set build_number = 3 %}
 
 package:
     name: {{ name|lower }}
