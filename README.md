@@ -107,16 +107,41 @@ conda config --add channels astrorama
 conda config --set channel_priority strict
 ```
 
-Once the `astrorama` channel has been enabled, `alexandria` can be installed with:
+Once the `astrorama` channel has been enabled, `alexandria` can be installed with `conda`:
 
 ```
 conda install alexandria
 ```
 
-It is possible to list all of the versions of `alexandria` available on your platform with:
+or with `mamba`:
+
+```
+mamba install alexandria
+```
+
+It is possible to list all of the versions of `alexandria` available on your platform with `conda`:
 
 ```
 conda search alexandria --channel astrorama
+```
+
+or with `mamba`:
+
+```
+mamba search alexandria --channel astrorama
+```
+
+Alternatively, `mamba repoquery` may provide more information:
+
+```
+# Search all versions available on your platform:
+mamba repoquery search alexandria --channel astrorama
+
+# List packages depending on `alexandria`:
+mamba repoquery whoneeds alexandria --channel astrorama
+
+# List dependencies of `alexandria`:
+mamba repoquery depends alexandria --channel astrorama
 ```
 
 
