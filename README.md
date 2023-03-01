@@ -1,11 +1,11 @@
-About alexandria
-================
+About alexandria-feedstock
+==========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/astrorama/alexandria-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/astrorama/Alexandria.git
 
 Package license: LGPL
-
-Feedstock license: [BSD-3-Clause](https://github.com/astrorama/alexandria-feedstock/blob/master/LICENSE.txt)
 
 Summary: SDC-CH common library for the Euclid project
 
@@ -20,8 +20,8 @@ Current build status
     <td>
       <details>
         <summary>
-          <a href="https://dev.azure.com/astrorama/feedstock-builds/_build/latest?definitionId=2&branchName=master">
-            <img src="https://dev.azure.com/astrorama/feedstock-builds/_apis/build/status/alexandria-feedstock?branchName=master">
+          <a href="https://dev.azure.com/astrorama/feedstock-builds/_build/latest?definitionId=2&branchName=main">
+            <img src="https://dev.azure.com/astrorama/feedstock-builds/_apis/build/status/alexandria-feedstock?branchName=main">
           </a>
         </summary>
         <table>
@@ -29,64 +29,64 @@ Current build status
           <tbody><tr>
               <td>linux_64_python3.10.____cpython</td>
               <td>
-                <a href="https://dev.azure.com/astrorama/feedstock-builds/_build/latest?definitionId=2&branchName=master">
-                  <img src="https://dev.azure.com/astrorama/feedstock-builds/_apis/build/status/alexandria-feedstock?branchName=master&jobName=linux&configuration=linux%20linux_64_python3.10.____cpython" alt="variant">
+                <a href="https://dev.azure.com/astrorama/feedstock-builds/_build/latest?definitionId=2&branchName=main">
+                  <img src="https://dev.azure.com/astrorama/feedstock-builds/_apis/build/status/alexandria-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_python3.10.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
               <td>linux_64_python3.8.____cpython</td>
               <td>
-                <a href="https://dev.azure.com/astrorama/feedstock-builds/_build/latest?definitionId=2&branchName=master">
-                  <img src="https://dev.azure.com/astrorama/feedstock-builds/_apis/build/status/alexandria-feedstock?branchName=master&jobName=linux&configuration=linux%20linux_64_python3.8.____cpython" alt="variant">
+                <a href="https://dev.azure.com/astrorama/feedstock-builds/_build/latest?definitionId=2&branchName=main">
+                  <img src="https://dev.azure.com/astrorama/feedstock-builds/_apis/build/status/alexandria-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_python3.8.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
               <td>linux_64_python3.9.____cpython</td>
               <td>
-                <a href="https://dev.azure.com/astrorama/feedstock-builds/_build/latest?definitionId=2&branchName=master">
-                  <img src="https://dev.azure.com/astrorama/feedstock-builds/_apis/build/status/alexandria-feedstock?branchName=master&jobName=linux&configuration=linux%20linux_64_python3.9.____cpython" alt="variant">
+                <a href="https://dev.azure.com/astrorama/feedstock-builds/_build/latest?definitionId=2&branchName=main">
+                  <img src="https://dev.azure.com/astrorama/feedstock-builds/_apis/build/status/alexandria-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_python3.9.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
               <td>osx_64_python3.10.____cpython</td>
               <td>
-                <a href="https://dev.azure.com/astrorama/feedstock-builds/_build/latest?definitionId=2&branchName=master">
-                  <img src="https://dev.azure.com/astrorama/feedstock-builds/_apis/build/status/alexandria-feedstock?branchName=master&jobName=osx&configuration=osx%20osx_64_python3.10.____cpython" alt="variant">
+                <a href="https://dev.azure.com/astrorama/feedstock-builds/_build/latest?definitionId=2&branchName=main">
+                  <img src="https://dev.azure.com/astrorama/feedstock-builds/_apis/build/status/alexandria-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_python3.10.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
               <td>osx_64_python3.8.____cpython</td>
               <td>
-                <a href="https://dev.azure.com/astrorama/feedstock-builds/_build/latest?definitionId=2&branchName=master">
-                  <img src="https://dev.azure.com/astrorama/feedstock-builds/_apis/build/status/alexandria-feedstock?branchName=master&jobName=osx&configuration=osx%20osx_64_python3.8.____cpython" alt="variant">
+                <a href="https://dev.azure.com/astrorama/feedstock-builds/_build/latest?definitionId=2&branchName=main">
+                  <img src="https://dev.azure.com/astrorama/feedstock-builds/_apis/build/status/alexandria-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_python3.8.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
               <td>osx_64_python3.9.____cpython</td>
               <td>
-                <a href="https://dev.azure.com/astrorama/feedstock-builds/_build/latest?definitionId=2&branchName=master">
-                  <img src="https://dev.azure.com/astrorama/feedstock-builds/_apis/build/status/alexandria-feedstock?branchName=master&jobName=osx&configuration=osx%20osx_64_python3.9.____cpython" alt="variant">
+                <a href="https://dev.azure.com/astrorama/feedstock-builds/_build/latest?definitionId=2&branchName=main">
+                  <img src="https://dev.azure.com/astrorama/feedstock-builds/_apis/build/status/alexandria-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_python3.9.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
               <td>osx_arm64_python3.10.____cpython</td>
               <td>
-                <a href="https://dev.azure.com/astrorama/feedstock-builds/_build/latest?definitionId=2&branchName=master">
-                  <img src="https://dev.azure.com/astrorama/feedstock-builds/_apis/build/status/alexandria-feedstock?branchName=master&jobName=osx&configuration=osx%20osx_arm64_python3.10.____cpython" alt="variant">
+                <a href="https://dev.azure.com/astrorama/feedstock-builds/_build/latest?definitionId=2&branchName=main">
+                  <img src="https://dev.azure.com/astrorama/feedstock-builds/_apis/build/status/alexandria-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_arm64_python3.10.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
               <td>osx_arm64_python3.8.____cpython</td>
               <td>
-                <a href="https://dev.azure.com/astrorama/feedstock-builds/_build/latest?definitionId=2&branchName=master">
-                  <img src="https://dev.azure.com/astrorama/feedstock-builds/_apis/build/status/alexandria-feedstock?branchName=master&jobName=osx&configuration=osx%20osx_arm64_python3.8.____cpython" alt="variant">
+                <a href="https://dev.azure.com/astrorama/feedstock-builds/_build/latest?definitionId=2&branchName=main">
+                  <img src="https://dev.azure.com/astrorama/feedstock-builds/_apis/build/status/alexandria-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_arm64_python3.8.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
               <td>osx_arm64_python3.9.____cpython</td>
               <td>
-                <a href="https://dev.azure.com/astrorama/feedstock-builds/_build/latest?definitionId=2&branchName=master">
-                  <img src="https://dev.azure.com/astrorama/feedstock-builds/_apis/build/status/alexandria-feedstock?branchName=master&jobName=osx&configuration=osx%20osx_arm64_python3.9.____cpython" alt="variant">
+                <a href="https://dev.azure.com/astrorama/feedstock-builds/_build/latest?definitionId=2&branchName=main">
+                  <img src="https://dev.azure.com/astrorama/feedstock-builds/_apis/build/status/alexandria-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_arm64_python3.9.____cpython" alt="variant">
                 </a>
               </td>
             </tr>

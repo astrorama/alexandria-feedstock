@@ -1,5 +1,5 @@
 {% set name = "Alexandria" %}
-{% set version = "2.28.2" %}
+{% set version = "2.28.3" %}
 {% set build_number = 0 %}
 
 package:
