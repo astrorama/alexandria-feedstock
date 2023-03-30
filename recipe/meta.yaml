@@ -25,7 +25,7 @@ requirements:
         - {{ compiler('c') }}
     host:
         - python
-        - boost
+        - boost >=1.81
         - elements ==6.1.2
         - cfitsio >=3.470
         - CCfits >=2.5
