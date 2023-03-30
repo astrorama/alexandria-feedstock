@@ -1,6 +1,6 @@
 {% set name = "Alexandria" %}
 {% set version = "2.28.4" %}
-{% set build_number = 1 %}
+{% set build_number = 2 %}
 
 package:
     name: {{ name|lower }}
@@ -23,6 +23,7 @@ requirements:
         - make
         - {{ compiler('cxx') }}
         - {{ compiler('c') }}
+        - libcxx<16
     host:
         - python
         - boost 
