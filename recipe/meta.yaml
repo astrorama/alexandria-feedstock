@@ -1,7 +1,7 @@
 {% set name = "Alexandria" %}
 {% set version = "2.30.2" %}
 {% set tagversion = "anaconda.2.30.2" %}
-{% set build_number = 2 %}
+{% set build_number = 3 %}
 
 package:
     name: {{ name|lower }}
@@ -24,13 +24,13 @@ requirements:
         - make
         - {{ compiler('cxx') }}
         - {{ compiler('c') }}
-        - libcxx<16
+        - libcxx
     host:
         - python
         - boost 
-        - libcxx<16
+        - libcxx
         - elements ==6.2.2
-        - cfitsio ==4.2.0
+        - cfitsio <4.3
         - CCfits >=2.5
     run:
         - {{ pin_compatible('python', min_pin='x.x', max_pin='x.x') }}
