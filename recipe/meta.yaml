@@ -1,7 +1,7 @@
 {% set name = "Alexandria" %}
-{% set version = "2.30.2" %}
-{% set tagversion = "anaconda.2.30.2" %}
-{% set build_number = 3 %}
+{% set version = "2.30.3" %}
+{% set tagversion = "anaconda.2.30.3" %}
+{% set build_number = 0 %}
 
 package:
     name: {{ name|lower }}
