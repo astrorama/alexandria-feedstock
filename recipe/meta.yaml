@@ -1,6 +1,6 @@
 {% set name = "Alexandria" %}
 {% set version = "2.31.0" %}
-{% set build_number = 1 %}
+{% set build_number = 0 %}
 
 package:
     name: {{ name|lower }}
@@ -29,7 +29,7 @@ requirements:
         - boost 
         - libcxx<16
         - elements ==6.2.3
-        - cfitsio ==4.2.0
+        - cfitsio >=3.470
         - CCfits >=2.5
     run:
         - {{ pin_compatible('python', min_pin='x.x', max_pin='x.x') }}
