@@ -30,13 +30,13 @@ requirements:
         - libcxx<16
         - elements ==6.2.3
         - cfitsio >=3.470
-        - CCfits >=2.5
+        - ccfits >=2.5
     run:
         - {{ pin_compatible('python', min_pin='x.x', max_pin='x.x') }}
         - {{ pin_compatible('boost', min_pin='x.x', max_pin='x.x') }}
         - {{ pin_compatible('libcxx', min_pin='x.x', max_pin='x.x') }}
         - {{ pin_compatible('cfitsio', min_pin='x.x', max_pin='x.x') }}
-        - {{ pin_compatible('CCfits', min_pin='x.x', max_pin='x.x') }}
+        - {{ pin_compatible('ccfits', min_pin='x.x', max_pin='x.x') }}
 
 test:
     commands:
