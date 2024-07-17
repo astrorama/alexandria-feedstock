@@ -1,7 +1,7 @@
 {% set name = "Alexandria" %}
 {% set version = "2.31.3" %}
 {% set tagversion = "2.31.3" %}
-{% set build_number = 0 %}
+{% set build_number = 2 %}
 
 package:
     name: {{ name|lower }}
@@ -10,6 +10,8 @@ package:
 source:
     git_rev: {{ tagversion }}
     git_url: https://github.com/astrorama/Alexandria.git
+    patches:
+        - macos_path.patch          # [osx]
 
 build:
     number: {{ build_number }}
@@ -23,7 +25,6 @@ requirements:
         - cmake >=3.0
         - make
         - {{ compiler('cxx') }}
-        - {{ compiler('c') }}
         - libcxx<16
     host:
         - python
@@ -34,8 +35,7 @@ requirements:
         - CCfits >=2.5
     run:
         - {{ pin_compatible('python', min_pin='x.x', max_pin='x.x') }}
-        - {{ pin_compatible('boost', min_pin='x.x', max_pin='x.x') }}
-        - {{ pin_compatible('libcxx', min_pin='x.x', max_pin='x.x') }}
+        - {{ pin_compatible('boost-cpp', min_pin='x.x', max_pin='x.x') }}
         - {{ pin_compatible('cfitsio', min_pin='x.x', max_pin='x.x') }}
         - {{ pin_compatible('CCfits', min_pin='x.x', max_pin='x.x') }}
 
