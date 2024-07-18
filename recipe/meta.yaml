@@ -1,7 +1,7 @@
 {% set name = "Alexandria" %}
 {% set version = "2.31.3" %}
-{% set tagversion = "2.31.3" %}
-{% set build_number = 3 %}
+{% set tagversion = "conda-2.31.3" %}
+{% set build_number = 4 %}
 
 package:
     name: {{ name|lower }}
@@ -30,7 +30,7 @@ requirements:
         - python
         - boost 
         - libcxx<16
-        - elements ==6.3.0
+        - elements ==6.3.2
         - cfitsio <4.3
         - CCfits >=2.5
     run:
