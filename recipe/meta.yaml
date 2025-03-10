@@ -1,6 +1,6 @@
 {% set name = "Alexandria" %}
 {% set version = "2.31.4" %}
-{% set tagversion = "conda-2.31.4" %}
+{% set tagversion = "2.31.4" %}
 {% set build_number = 0 %}
 
 package:
