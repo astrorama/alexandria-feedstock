@@ -28,7 +28,7 @@ requirements:
         - python
         - boost 
         - libcxx<16
-        - elements ==6.2.3
+        - elements ==6.3.4
         - cfitsio >=3.470
         - ccfits >=2.5
     run:
