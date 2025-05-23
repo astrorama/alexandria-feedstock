@@ -27,7 +27,7 @@ requirements:
     host:
         - python
         - boost 
-        - libcxx<16
+        - libcxx
         - elements ==6.3.4
         - cfitsio >=3.470
         - ccfits >=2.5
